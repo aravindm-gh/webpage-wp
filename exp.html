@@ -1,0 +1,70 @@
+<html>
+    <head>
+        <title>
+            LOGIN PAGE
+        </title>
+        <script>
+            function validate(){
+               
+            }
+            function func(){
+                let x=document.getElementById("user-id").value;
+                let x1=document.getElementById("password").value;
+                if(x==""){
+                    alert("User-id should be entered");
+                    return false;
+                if(x1!="12345"){
+                    alert("Password Incorrect");
+                    return false;
+                }
+            }
+            let x2=document.getElementById("password").value;
+            if(x2==""){
+                alert("Password should be entered");
+                return false;
+            }
+                location.assign("page2.html")
+            }
+        </script>
+        <style>
+            body{
+                text-align:center;
+                vertical-align: middle;
+            }
+            .box{
+                margin:auto;
+                width:30%;
+                height:25%;
+                border-radius:10px;
+                border:3px solid red;
+                padding: 1px;
+                background-color:darkgray;
+                margin-top:12%;
+            }
+            #user-id{
+
+               border:1px solid blue;
+            }
+            #password{
+                border:1px solid blue;
+            }
+            #but{
+                border:1px solid slateblue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>WELCOME TO LOGIN PAGE</h1>
+        <!-- <form> -->
+            <div class="box">
+            <p><b>ENTER YOUR VALID USER-ID AND PASSWORD</b></p>
+            <label for="user-id">USER-ID   : </label>
+            <input type="text" id="user-id" placeholder="USER-ID"><br><br>
+            <label for="password">PASSWORD : </label>
+            <input type="password" id="password" placeholder="PASSWORD"><br><br>
+            <button onclick="func()" id="but">submit</button>
+            <p id="demo"></p>
+        <!-- </form> -->
+    </div>
+    </body>
+</html>
